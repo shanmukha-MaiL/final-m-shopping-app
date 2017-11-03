@@ -1,7 +1,2 @@
-Line 26: Class ComctlLib.ProgressBar of control ProgressBar1 was not a loaded control class.
-Line 32: The property name _ExtentX in ProgressBar1 is invalid.
-Line 33: The property name _ExtentY in ProgressBar1 is invalid.
-Line 34: The property name _Version in ProgressBar1 is invalid.
-Line 32: The property name _ExtentX in ProgressBar1 is invalid.
-Line 33: The property name _ExtentY in ProgressBar1 is invalid.
-Line 34: The property name _Version in ProgressBar1 is invalid.
+The file '0' was recognized as a Visual Basic file, but the header was corrupt and the file can't be loaded.
+Line 0: The file C:\Users\shanmukha\Downloads\m-shopping\frmSplash.frm could not be loaded.
