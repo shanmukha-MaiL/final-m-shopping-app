@@ -1,5 +1,4 @@
 VERSION 5.00
-Object = "{6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.3#0"; "COMCTL32.OCX"
 Begin VB.Form frmSplash 
    BorderStyle     =   3  'Fixed Dialog
    ClientHeight    =   5580
@@ -23,16 +22,22 @@ Begin VB.Form frmSplash
       TabIndex        =   0
       Top             =   120
       Width           =   12225
-      Begin ComctlLib.ProgressBar ProgressBar1 
+      Begin VB.CommandButton Command1 
+         Caption         =   "START"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   13.5
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
          Height          =   495
-         Left            =   6960
+         Left            =   8040
          TabIndex        =   7
          Top             =   4560
-         Width           =   4935
-         _ExtentX        =   8705
-         _ExtentY        =   873
-         _Version        =   327682
-         Appearance      =   1
+         Width           =   2415
       End
       Begin VB.Frame Frame2 
          Caption         =   "Group 11"
@@ -132,6 +137,11 @@ Attribute VB_Exposed = False
 
 Option Explicit
 
+Private Sub Command1_Click()
+frmSplash.Hide
+Form1.Show
+End Sub
+
 Private Sub Form_KeyPress(KeyAscii As Integer)
     Unload Me
 End Sub
@@ -143,4 +153,8 @@ End Sub
 
 Private Sub Frame1_Click()
     Unload Me
+End Sub
+
+Private Sub ProgressBar1_Click()
+Progress
 End Sub
