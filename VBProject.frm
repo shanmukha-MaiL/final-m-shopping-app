@@ -1,5 +1,5 @@
 VERSION 5.00
-Begin VB.Form WelcomeForm 
+Begin VB.Form LOGIN 
    Caption         =   "Login to m-Shopping"
    ClientHeight    =   6240
    ClientLeft      =   225
@@ -183,7 +183,7 @@ Begin VB.Form WelcomeForm
       Width           =   1695
    End
 End
-Attribute VB_Name = "WelcomeForm"
+Attribute VB_Name = "LOGIN"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
@@ -194,9 +194,10 @@ Dim rec_ary As Variant
 
 Private Sub LoginButton_Click()
     Set db = New ADODB.Connection
-    db.Open "PROVIDER=Microsoft.Jet.OLEDB.4.0; Data Source=" & App.Path + "\mshopping.mdb"
+    db.Open "PROVIDER=Microsoft.Jet.OLEDB.4.0; Data Source= C:\Users\shanmukha\Downloads\m-shopping\mshopping.mdb;Persist security info = "
     Set records = New ADODB.Recordset
     records.Open "Select * from users", db, adOpenStatic, adLockOptimistic
     rec_ary = records.GetRows(1)
     MsgBox (rec_ary(0, 0))
 End Sub
+

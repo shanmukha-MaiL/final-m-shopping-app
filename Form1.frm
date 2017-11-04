@@ -9,23 +9,6 @@ Begin VB.Form Form1
    ScaleHeight     =   4545
    ScaleWidth      =   12915
    StartUpPosition =   3  'Windows Default
-   Begin VB.CommandButton VIEW_ALL 
-      Caption         =   "VIEW ALL"
-      BeginProperty Font 
-         Name            =   "MS Serif"
-         Size            =   12
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      Height          =   615
-      Left            =   9120
-      TabIndex        =   4
-      Top             =   2400
-      Width           =   1935
-   End
    Begin VB.CommandButton GET_STARTED 
       Caption         =   "GET STARTED"
       BeginProperty Font 
@@ -38,9 +21,9 @@ Begin VB.Form Form1
          Strikethrough   =   0   'False
       EndProperty
       Height          =   615
-      Left            =   6360
+      Left            =   7800
       TabIndex        =   3
-      Top             =   2400
+      Top             =   2520
       Width           =   1935
    End
    Begin VB.PictureBox Picture1 

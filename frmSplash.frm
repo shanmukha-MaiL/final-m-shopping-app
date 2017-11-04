@@ -1,9 +1,10 @@
 VERSION 5.00
-Begin VB.Form frmSplash 
+Begin VB.Form OPENING 
    BorderStyle     =   3  'Fixed Dialog
+   Caption         =   "  "
    ClientHeight    =   5580
    ClientLeft      =   255
-   ClientTop       =   1410
+   ClientTop       =   1755
    ClientWidth     =   12540
    ClipControls    =   0   'False
    ControlBox      =   0   'False
@@ -129,7 +130,7 @@ Begin VB.Form frmSplash
       End
    End
 End
-Attribute VB_Name = "frmSplash"
+Attribute VB_Name = "OPENING"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
@@ -138,8 +139,8 @@ Attribute VB_Exposed = False
 Option Explicit
 
 Private Sub Command1_Click()
-frmSplash.Hide
-Form1.Show
+OPENING.Hide
+LOGIN.Show
 End Sub
 
 Private Sub Form_KeyPress(KeyAscii As Integer)
